@@ -1,0 +1,7 @@
+services:
+  - type: web
+    name: spam-detector-api
+    env: python
+    buildCommand: ""
+    startCommand: python app.py
+    plan: free
