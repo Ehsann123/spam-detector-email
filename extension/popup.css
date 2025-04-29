@@ -1,0 +1,90 @@
+body {
+    font-family: 'Inter', 'Segoe UI', sans-serif; /* A more modern and clean font */
+    margin: 0;
+    padding: 25px; /* Slightly more padding for a spacious feel */
+    width: 360px; /* A bit wider to feel more substantial */
+    background: linear-gradient(145deg, #f8f9fa, #e9ecef); /* Subtle, modern gradient */
+    color: #495057; /* Darker, more sophisticated text color */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 16px; /* More pronounced rounded corners */
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15); /* Deeper, softer shadow */
+}
+
+h1 {
+    font-size: 26px; /* Slightly larger, more prominent title */
+    font-weight: 700; /* Bolder title */
+    margin-bottom: 25px;
+    color: #343a40; /* Darker title color */
+    text-align: center; /* Center the title */
+}
+
+textarea {
+    width: 100%;
+    height: 140px; /* A bit taller for more text area */
+    padding: 15px;
+    margin-bottom: 20px;
+    font-size: 15px;
+    border: 1px solid #ced4da; /* Softer border */
+    border-radius: 12px;
+    background-color: #fff;
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.05); /* Subtle inner shadow */
+    resize: none;
+    transition: border-color 0.3s ease;
+}
+
+textarea:focus {
+    border-color: #007bff; /* Highlight on focus */
+    outline: none;
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.05), 0 0 0 0.2rem rgba(0, 123, 255, 0.25); /* Focus ring */
+}
+
+button {
+    width: 100%;
+    padding: 14px 20px; /* More padding for a larger button */
+    background: linear-gradient(135deg, #007bff, #0056b3); /* Modern blue gradient */
+    color: white;
+    font-size: 17px;
+    font-weight: 600;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease-in-out; /* Smoother transitions */
+    margin-top: 15px;
+    box-shadow: 0 4px 12px rgba(0, 123, 255, 0.2); /* Elevated button shadow */
+}
+
+button:hover {
+    background: linear-gradient(135deg, #0056b3, #003a8c); /* Darker shade on hover */
+    transform: translateY(-2px); /* Subtle lift on hover */
+}
+
+button:active {
+    transform: translateY(0); /* Reset transform on click */
+    box-shadow: 0 2px 6px rgba(0, 123, 255, 0.3); /* Smaller shadow on click */
+}
+
+#result {
+    margin-top: 25px;
+    font-size: 19px;
+    font-weight: 700;
+    text-align: center;
+    padding: 15px;
+    width: 100%;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease, color 0.3s ease; /* Smooth color transitions */
+}
+
+#result.spam {
+    background-color: #ffe0e0;
+    color: #d32f2f;
+    border: 1px solid #f44336; /* Subtle border */
+}
+
+#result.ham {
+    background-color: #e0ffe0;
+    color: #388e3c;
+    border: 1px solid #4caf50; /* Subtle border */
+}
