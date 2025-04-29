@@ -7,7 +7,8 @@
       "activeTab"
     ],
     "host_permissions": [
-      "http://localhost:5000/*"
+        "https://spam-detector-api.onrender.com/predict"
+
     ],
     "action": {
       "default_popup": "popup.html"
